@@ -1,0 +1,223 @@
+* { box-sizing:border-box; }
+
+#login-form {
+	padding:120px 20px; 
+	background-color:#F39022;
+	margin-top:120px;
+	-webkit-font-smoothing: antialiased;
+	}
+
+.group { 
+	position: relative; 
+	margin-bottom: 15px; 
+}
+
+.login input[type=password]{
+	font-size: 25px;
+	padding: 10px;
+	-webkit-appearance: none;
+	display: block;
+	background: #fff;
+	color: #C17121;
+	width: 100%;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #C17121;
+}
+
+.login input[type=text]{
+	font-size: 15px;
+	padding: 10px;
+	-webkit-appearance: none;
+	display: block;
+	background: #fff;
+	color: #C17121;
+	width: 100%;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #C17121;
+}
+
+.login input:focus { outline: none; }
+
+
+/* Label */
+
+.login label {
+	color: #C17121; 
+	font-size: 22px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 3px;
+	top: 10px;
+	-webkit-transition:all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+
+/* active */
+
+.login input:focus ~ label, input.used ~ label {
+	top: -30px;
+  -webkit-transform: scale(.75);
+          transform: scale(.75); left: -2px;
+	/* font-size: 14px; */
+	color: #C17121;
+}
+
+
+/* Underline */
+
+.bar {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.bar:before, .bar:after {
+	content: '';
+	height: 2px; 
+	width: 0;
+	bottom: 1px; 
+	position: absolute;
+	background: #C17121; 
+	-webkit-transition:all 0.2s ease; 
+	transition: all 0.2s ease;
+}
+
+.bar:before { left: 50%; }
+
+.bar:after { right: 50%; }
+
+
+/* Highlight */
+
+.login .highlight {
+	position: absolute;
+	height: 60%; 
+	width: 150px; 
+	top: 25%; 
+	left: 0;
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+
+/* active */
+.login input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
+	
+
+/* active */
+.login input:focus ~ .highlight {
+	webkit-animation: inputHighlighter 0.3s ease;
+	animation: inputHighlighter 0.3s ease;
+}
+
+
+/* Animations */
+
+@-webkit-keyframes inputHighlighter {
+	from { background: #C17121; }
+	to 	{ width: 0; background: transparent; }
+}
+
+@keyframes inputHighlighter {
+	from { background: #C17121; }
+	to 	{ width: 0; background: transparent; }
+}
+
+
+/* Button */
+
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 15px;
+  margin: .3em 0 1em 0;
+  width: 100%;
+  vertical-align: middle;
+  color: #F39022;
+  text-align: center;
+  letter-spacing: 1px;
+  border: 0;
+  border-bottom: 2px solid #C17121;
+  cursor: pointer;
+  -webkit-transition:all 0.15s ease;
+  transition: all 0.15s ease;
+  border:1px solid #FFF;
+}
+
+.button:focus { outline: 0; }
+
+
+/* Button modifiers */
+
+.buttonBlue {
+  background: #fff;
+  text-shadow: 1px 1px 0 #F39022;
+}
+
+.buttonBlue:hover { background: #F39022; color:#fff;}
+
+
+/* Ripples container */
+
+.ripples {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: transparent;
+}
+
+
+/* Ripples circle */
+
+.ripplesCircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background:#fff;
+}
+
+.ripples.is-active .ripplesCircle {
+  -webkit-animation: ripples .4s ease-in;
+          animation: ripples .4s ease-in;
+}
+
+
+/* Ripples animation */
+
+@-webkit-keyframes ripples {
+  0% { opacity: 0; }
+
+  25% { opacity: 1; }
+
+  100% {
+    width: 200%;
+    padding-bottom: 200%;
+    opacity: 0;
+  }
+}
+
+@keyframes ripples {
+  0% { opacity: 0; }
+
+  25% { opacity: 1; }
+
+  100% {
+    width: 200%;
+    padding-bottom: 200%;
+    opacity: 0;
+  }
+}
+

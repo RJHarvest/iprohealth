@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>iProHealth - Support</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/hero-slider.css">
+    <link rel="stylesheet" href="css/tooplate-style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var acc = document.getElementsByClassName("accordion");
+            var panel = document.getElementsByClassName('panel');
+            for (var i = 0; i < acc.length; i++) {
+                acc[i].onclick = function() {
+                    var setClasses = !this.classList.contains('active');
+                    setClass(acc, 'active', 'remove');
+                    setClass(panel, 'show', 'remove');
+                    if (setClasses) {
+                        this.classList.toggle("active");
+                        this.nextElementSibling.classList.toggle("show");
+                    }
+                }
+            }
+
+            function setClass(els, className, fnName) {
+                for (var i = 0; i < els.length; i++) {
+                    els[i].classList[fnName](className);
+                }
+            }
+        });
+    </script>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function() {
+                this.classList.toggle("active");
+                this.nextElementSibling.classList.toggle("show");
+            };
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand scroll-top">
+                        <div class="logo"></div>
+                    </a>
+                </div>
+                <!--/.navbar-header-->
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">HOME</a>
+                        </li>
+                        <li><a href="index.html#about">ABOUT IPROHEALTH</a>
+                        </li>
+                        <li><a href="product.html">DISCOVER OUR PRODUCTS</a>
+                        </li>
+                        <li><a href="health.html">HEALTH CARE</a>
+                        </li>
+                        <li><a href="support.html">SUPPORT</a>
+                        </li>
+                        <li><a href="contact.html">CONTACT US</a>
+                        </li>
+                        <li class="ipro-button"><a href="login.html">iPro Buddy</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.navbar-collapse-->
+            </nav>
+            <!--/.navbar-->
+        </div>
+        <!--/.container-->
+    </div>
+    <!--/.header-->
+
+
+    <!-- .cd-hero -->
+
+    <div class="row forget_bg">
+        <div class="container">
+            <div class="col-md-12 col-sm-12 col-xs-12" style=" padding-top:150px; padding-bottom:200px">
+                <div class="overview-two slider-item">
+                    <h1 style="text-align:center; color:#F39022">iProHealth Buddy</h1>
+                    <p style="text-align:center">Take a look inside and see all the ways iProHealth Buddy, can help you be your best.</p>
+                </div>
+
+                <div>
+                    <!-- multistep form -->
+                    <form id="msform">
+                        <!-- progressbar -->
+                        <ul id="progressbar">
+                            <li class="active">Account Setup</li>
+                            <li>Social Profiles</li>
+                            <li>Personal Details</li>
+                        </ul>
+                        <!-- fieldsets -->
+                        <fieldset>
+                            <h2 class="fs-title">Create your account</h2>
+                            <h3 class="fs-subtitle">Take a look inside and see all the ways iProHealth Buddy, can help you be your best.</h3>
+                            <input type="email" name="email" placeholder="Email" required/>
+                            <input type="password" name="pass" placeholder="Password" />
+                            <input type="password" name="cpass" placeholder="Confirm Password" />
+                            <input type="button" name="next" class="next action-button" value="Next" />
+                        </fieldset>
+                        <fieldset>
+                            <h2 class="fs-title">Social Profiles</h2>
+                            <h3 class="fs-subtitle">Your presence on the social network</h3>
+                            <input type="text" name="twitter" placeholder="Twitter" />
+                            <input type="text" name="facebook" placeholder="Facebook" />
+                            <input type="text" name="gplus" placeholder="Google Plus" />
+                            <!-----<input type="button" name="previous" class="previous action-button" value="Previous" />-->
+                            <input type="button" name="next" class="next action-button" value="Next" />
+                        </fieldset>
+                        <fieldset>
+                            <h2 class="fs-title">Personal Details</h2>
+                            <h3 class="fs-subtitle">Take a look inside and see all the ways iProHealth Buddy, can help you be your best.</h3>
+                            <input type="text" name="fname" placeholder="First Name" />
+                            <input type="text" name="lname" placeholder="Last Name" />
+                            <input type="text" name="phone" placeholder="Phone" />
+                            <!-----<input type="button" name="previous" class="previous action-button" value="Previous" />-->
+                            <a href="success.html" style="text-decoration:none">
+                                <font class="action-button2" style=" margin:0px auto; display:table; font-size:13px; font-weight:lighter">
+    Submit
+    </font>
+
+                            </a>
+                        </fieldset>
+                    </form>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--------------------------------section 1----------------------------------------->
+    <div class="section3">
+        <div id="contact" class="page-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="social-icons">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-rss"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h3 style="text-align:center; color:#fff">iProHealth discover</h3>
+                            <p style="text-align:center; color:#FFFFFF">
+                            <a class="footer_map" href="sc/register.html">中</a> |
+                            <a class="footer_map" href="#">ENG</a></p>
+                            <p style="text-align:center; color:#FFFFFF">
+                                <a class="footer_map" href="contact.html">CONTACT US</a> |
+                                <a class="footer_map" href="support.html">SUPPORT</a> |
+                                <a class="footer_map" href="health.html">HEALTH CARE</a> |
+                                <a class="footer_map" href="product.html">DISCOVER OUR PRODUCTS</a> |
+                                <a href="#" class="scroll-link footer_map" data-id="about">ABOUT IPROHEALTH</a> |
+                                <a class="footer_map" href="index.html">HOME</a>
+                            </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+   <!--------------------------------section 1----------------------------------------->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2017 iProHealth</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-----------<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-------->
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+
+    <script src="js/main.js"></script>
+
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // navigation click actions
+            $('.scroll-link').on('click', function(event) {
+                event.preventDefault();
+                var sectionID = $(this).attr("data-id");
+                scrollToID('#' + sectionID, 750);
+            });
+            // scroll to top action
+            $('.scroll-top').on('click', function(event) {
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 'slow');
+            });
+            // mobile nav toggle
+            $('#nav-toggle').on('click', function(event) {
+                event.preventDefault();
+                $('#main-nav').toggleClass("open");
+            });
+        });
+        // scroll function
+        function scrollToID(id, speed) {
+            var offSet = 50;
+            var targetOffset = $(id).offset().top - offSet;
+            var mainNav = $('#main-nav');
+            $('html,body').animate({
+                scrollTop: targetOffset
+            }, speed);
+            if (mainNav.hasClass("open")) {
+                mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+                mainNav.removeClass("open");
+            }
+        }
+        if (typeof console === "undefined") {
+            console = {
+                log: function() {}
+            };
+        }
+    </script>
+    <script>
+        //jQuery time
+        var current_fs, next_fs, previous_fs; //fieldsets
+        var left, opacity, scale; //fieldset properties which we will animate
+        var animating; //flag to prevent quick multi-click glitches
+
+        $(".next").click(function() {
+            if (animating) return false;
+            animating = true;
+
+            current_fs = $(this).parent();
+            next_fs = $(this).parent().next();
+
+            //activate next step on progressbar using the index of next_fs
+            $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+            //show the next fieldset
+            next_fs.show();
+            //hide the current fieldset with style
+            current_fs.animate({
+                opacity: 0
+            }, {
+                step: function(now, mx) {
+                    //as the opacity of current_fs reduces to 0 - stored in "now"
+                    //1. scale current_fs down to 80%
+                    scale = 1 - (1 - now) * 0.2;
+                    //2. bring next_fs from the right(50%)
+                    left = (now * 50) + "%";
+                    //3. increase opacity of next_fs to 1 as it moves in
+                    opacity = 1 - now;
+                    current_fs.css({
+                        'transform': 'scale(' + scale + ')',
+                        'position': 'absolute'
+                    });
+                    next_fs.css({
+                        'left': left,
+                        'opacity': opacity
+                    });
+                },
+                duration: 800,
+                complete: function() {
+                    current_fs.hide();
+                    animating = false;
+                },
+                //this comes from the custom easing plugin
+                easing: 'easeInOutBack'
+            });
+        });
+
+        $(".previous").click(function() {
+            if (animating) return false;
+            animating = true;
+
+            current_fs = $(this).parent();
+            previous_fs = $(this).parent().prev();
+
+            //de-activate current step on progressbar
+            $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+            //show the previous fieldset
+            previous_fs.show();
+            //hide the current fieldset with style
+            current_fs.animate({
+                opacity: 0
+            }, {
+                step: function(now, mx) {
+                    //as the opacity of current_fs reduces to 0 - stored in "now"
+                    //1. scale previous_fs from 80% to 100%
+                    scale = 0.8 + (1 - now) * 0.2;
+                    //2. take current_fs to the right(50%) - from 0%
+                    left = ((1 - now) * 50) + "%";
+                    //3. increase opacity of previous_fs to 1 as it moves in
+                    opacity = 1 - now;
+                    current_fs.css({
+                        'left': left
+                    });
+                    previous_fs.css({
+                        'transform': 'scale(' + scale + ')',
+                        'opacity': opacity
+                    });
+                },
+                duration: 800,
+                complete: function() {
+                    current_fs.hide();
+                    animating = false;
+                },
+                //this comes from the custom easing plugin
+                easing: 'easeInOutBack'
+            });
+        });
+
+        $(".submit").click(function() {
+            return false;
+        })
+    </script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+</body>
+
+</html>

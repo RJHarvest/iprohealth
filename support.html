@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>iProHealth - Support</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/hero-slider.css">
+    <link rel="stylesheet" href="css/tooplate-style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var acc = document.getElementsByClassName("accordion");
+            var panel = document.getElementsByClassName('panel');
+            for (var i = 0; i < acc.length; i++) {
+                acc[i].onclick = function() {
+                    var setClasses = !this.classList.contains('active');
+                    setClass(acc, 'active', 'remove');
+                    setClass(panel, 'show', 'remove');
+                    if (setClasses) {
+                        this.classList.toggle("active");
+                        this.nextElementSibling.classList.toggle("show");
+                    }
+                }
+            }
+
+            function setClass(els, className, fnName) {
+                for (var i = 0; i < els.length; i++) {
+                    els[i].classList[fnName](className);
+                }
+            }
+        });
+    </script>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function() {
+                this.classList.toggle("active");
+                this.nextElementSibling.classList.toggle("show");
+            };
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand scroll-top">
+                        <div class="logo"></div>
+                    </a>
+                </div>
+                <!--/.navbar-header-->
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">HOME</a>
+                        </li>
+                        <li><a href="index.html#about">ABOUT IPROHEALTH</a>
+                        </li>
+                        <li><a href="product.html">DISCOVER OUR PRODUCTS</a>
+                        </li>
+                        <li><a href="health.html">HEALTH CARE</a>
+                        </li>
+                        <li><a href="support.html" class="border">SUPPORT</a>
+                        </li>
+                        <li><a href="contact.html">CONTACT US</a>
+                        </li>
+                        <li class="ipro-button"><a href="login.html">iPro Buddy</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.navbar-collapse-->
+            </nav>
+            <!--/.navbar-->
+        </div>
+        <!--/.container-->
+    </div>
+    <!--/.header-->
+
+
+     <!-- .cd-hero -->
+
+    <!-- 3 button -->
+<div class="row support_bg">
+       <div class=" container" style="padding:50px 0px">
+       <!--------------------------------section 1----------------------------------------->
+       <div class="col-md-12">
+       <div class="col-md-7 col-sm-12 col-xs-12" style=" padding:30px 30px;">
+				<h1 class="text">SHOW YOUR CARE BE AWARE</h1>
+				<p  class="text">iProHealth Discover is the world’s first Digital Medicine offering designed for health organizations searching for an efficient, patient-centric approach to measure, manage and improve the health of patient populations.</p>
+		</div>
+
+        </div>
+        <!--------------------------------section 1----------------------------------------->
+       </div>
+    </div>
+
+
+
+
+
+
+
+<div class="row support_bg2">
+<div class="container">
+       <!--------------------------------section 3----------------------------------------->
+        <div class="col-md-12 col-sm-12 col-xs-12" style=" padding-top:50px; padding-bottom:50px">
+       <div class="overview-two slider-item">
+				<h1 style="text-align:center; color:#F39022">What do you need help with?</h1>
+				<p style="text-align:center">We are here to answer any questions you may have about our combadi experiences. Reach out to us and we'll respond as soon as we can.Even if there is something you have always wanted to experience and can't find it on combadi, let us know and we promise we'll do our best to find it for you and send you there.</p>
+		</div>
+        <!-------------------------------------------form---------------------------------------------------------->
+        <div>
+  <form id="support" action="" method="post">
+    <fieldset>
+      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+
+
+        </div>
+        </div>
+       </div>
+
+    </div>
+
+ <!--------------------------------section 3----------------------------------------->
+<!--------------------------------section 3----------------------------------------->
+    <div class="row">
+        <div class="container">
+
+            <div class="col-md-12 col-sm-12 col-xs-12" style=" padding-top:50px; padding-bottom:50px">
+                <div>
+                    <h1 style="color:#F39022"">Transforming care with Digital Medicine</h1>
+                    <p>iProHealth Discover is the world’s first Digital Medicine offering designed for health organizations searching for an efficient, patient-centric approach to measure, manage and improve the health of patient populations. iProHealth Discover provides the tools needed to build efficiency and measurement into the delivery of care, and an opportunity to mitigate the high costs of uncontrolled diseases. </p>
+                </div>
+               <p class="accordion bg">Q1. What currency is the course charged in?</p>
+<div class="panel">A. The course is charged in Australian dollars.</div>
+<p class="accordion">Q2. What if the course doesn’t help me?</p>
+<div class="panel">A. If it doesn't help you I'll refund the purchase price in full.</div>
+<p class="accordion bg">Q3. When will the webinars take place?</p>
+<div class="panel">A. Depending on the mix of countries and time zones for people attending the webinars, I will pick a time that works best for most participants. All webinars will be recorded so you can listen to them again. The private Facebook group will obviously be available 24/7 and I’ll be monitoring and contributing to the discussion regularly.</div>
+<p class="accordion">Q4. What is the self-directed mentoring program?</p>
+<div class="panel">A. The self-directed mentoring program is designed to help you set-up and run an effective mentee-mentor relationship as part of the course.</div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--------------------------------section 3----------------------------------------->
+<div class="section3">
+    <div id="contact" class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="social-icons">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-rss"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h3 style="text-align:center; color:#fff">iProHealth discover</h3>
+                            <p style="text-align:center; color:#FFFFFF">
+                            <a class="footer_map" href="sc/support.html">中</a> |
+                            <a class="footer_map" href="#">ENG</a></p>
+                            <p style="text-align:center; color:#FFFFFF">
+                                <a class="footer_map" href="contact.html">CONTACT US</a> |
+                                <a class="footer_map" href="support.html">SUPPORT</a> |
+                                <a class="footer_map" href="health.html">HEALTH CARE</a> |
+                                <a class="footer_map" href="product.html">DISCOVER OUR PRODUCTS</a> |
+                                <a href="#" class="scroll-link footer_map" data-id="about">ABOUT IPROHEALTH</a> |
+                                <a class="footer_map" href="index.html">HOME</a>
+                            </p>
+                </div>
+
+            </div>
+            </div>
+            </div>
+            </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2017 iProHealth</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-----------<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-------->
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+
+    <script src="js/main.js"></script>
+
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // navigation click actions
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+    // scroll function
+    function scrollToID(id, speed){
+        var offSet = 50;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    if (typeof console === "undefined") {
+        console = {
+            log: function() { }
+        };
+    }
+    </script>
+</body>
+</html>
